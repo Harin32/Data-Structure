@@ -1,0 +1,12 @@
+//Find the max and min element in the array
+
+arr=[2,4,6,56,23]
+if len(arr)==0:
+    print("The array is empty")
+else:
+    Maximum= max(arr)
+    Minimum= min(arr)
+    
+    print("Array:", arr)
+    print("Maximum element:", Maximum)
+    print("Minimum element:", Minimum)
