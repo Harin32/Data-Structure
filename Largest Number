@@ -1,0 +1,14 @@
+//Find the Largest Number in the array
+
+arr=[2,4,6,56,23,10000]
+if len(arr)==0:
+    print("The array is empty")
+else:
+   largest =arr[0]
+   for num in arr:
+       if num>largest:
+           largest = num
+       
+print("Array:", arr)
+print("Largest element:", largest)
+   
