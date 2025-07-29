@@ -1,40 +1,23 @@
-import java.util.*;
-class work1 //switch Case
+import java.util.Scanner;
+class work4
 {
     public static void main(String args[])
     {
-        
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter any number upto 6:");
-        int day = sc.nextInt();
-        
-        if ( day == 1)
-        {
-            System.out.println("Mon");
-        }
-        else if( day == 2)
-        {
-             System.out.println("thu");
-        }
-        else if( day == 3)
-        {
-            System.out.println("wed");
-        }
-        else if( day == 4)
-        {
-            System.out.println("thr");
-        }
-        else if( day==5)
-        {
-            System.out.println("Fri");
-        }
-        else if( day == 6)
-        {
-            System.out.println("sat");
-        }
-        else
-        {
-            System.out.println("sunday");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the URL of the website :");
+        String url= sc.nextLine();
+        String ext =url.substring(url.lastIndexOf(".")+1);
+        switch (ext) {
+            case "com":System.out.println("commercial");
+                break;
+            case "gov":System.out.println("Government");
+                break;
+            case "org":System.out.println("Organization");
+                break;
+            case "net": System.out.println("Network");
+                break;
+            default:System.out.println("invalid");
+                break;
         }
     }
 }
